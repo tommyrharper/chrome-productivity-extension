@@ -1,5 +1,12 @@
 {
   "mainfest_version": 2,
   "name": "Focus",
-  "version": "1.0"
+  "version": "1.0",
+  "description": "Remove distracting content from the YouTube homepage.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["./main.js"]
+    }
+  ]
 }
