@@ -5,5 +5,7 @@
 // jQuery
 var contents = $('#contents');
 var contentsParent = contents.parent();
-contents.remove;
-contentsParnet.prepend('https://i.redd.it/czndqfla5fh21.jpg');
+contents.remove();
+const imgUrl = chrome.extension.getURL('./images/stoicquote2.jpg');
+contentsParent.prepend('<img src="' + imgUrl + '" alt="">');
+contentsParent.prepend('<h1>User your time wisely, each moment is precious.</h1>');
