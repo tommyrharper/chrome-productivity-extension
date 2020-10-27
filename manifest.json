@@ -6,7 +6,12 @@
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
-      "js": ["./jQuery.min.js", "./main.js"]
+      "js": ["jquery.min.js", "./main.js"]
     }
+  ],
+  "web_accessible_resources": [
+    "./images/stoic.jpg",
+    "./images/stoicquote1.jpg",
+    "./images/stoicquote2.jpg"
   ]
 }
