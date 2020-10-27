@@ -6,6 +6,6 @@
 var contents = $('#contents');
 var contentsParent = contents.parent();
 contents.remove();
-const imgUrl = chrome.extension.getURL('./images/stoicquote2.jpg');
+const imgUrl = chrome.extension.getURL('./stoicquote2.jpg');
 contentsParent.prepend('<img src="' + imgUrl + '" alt="">');
 contentsParent.prepend('<h1>User your time wisely, each moment is precious.</h1>');
