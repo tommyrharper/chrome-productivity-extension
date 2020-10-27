@@ -8,4 +8,6 @@ var contentsParent = contents.parent();
 contents.remove();
 const imgUrl = chrome.extension.getURL('./stoicquote2.jpg');
 contentsParent.prepend('<img src="' + imgUrl + '" alt="">');
-contentsParent.prepend('<h1>User your time wisely, each moment is precious.</h1>');
+contentsParent.prepend('<h1>Use your time wisely, each moment is precious.</h1>');
+
+contentsParent.addClass("title");
